@@ -1,0 +1,172 @@
+.section-skill {
+  max-width: 1026px;
+  height: 536px;
+  margin: 80px auto;
+  padding: 50px;
+  border-radius: 50px;
+
+  background: rgba(42, 41, 41, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px 0px black;
+}
+.linkNavigation{
+  scroll-margin-top: 16ex;
+}
+.section-skill h3 {
+  text-align: center;
+  font-size: 72px;
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.section-skill P {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  
+}
+
+.content-all {
+  max-width: 140px;
+  perspective: 1000px;
+  position: relative;
+  margin: 70px auto;
+}
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  animation: rotar 20s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.content-carrousel figure {
+  position: absolute;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px 0px black;
+  padding: 2px 4px 0px 4px;
+  max-width: 150px;
+  height: 160px;
+}
+.content-carrousel img {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 6px auto;
+}
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(32.73deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(65.46deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(98.19deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(130.92deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(163.65deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(196.38deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(229.11deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9) {
+  transform: rotateY(261.84deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(10) {
+  transform: rotateY(294.57deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(11) {
+  transform: rotateY(327.3deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(12) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@media (max-width: 740px) {
+  .content-all {
+    max-width: 68px;
+    margin: 28px auto;
+  }
+  .content-carrousel {
+    width: 85%;
+  }
+  .content-carrousel figure {
+    max-width: 60px;
+    height: 80px;
+  }
+  .section-skill {
+    max-height: 350px;
+    margin: 34px auto;
+  }
+  .section-skill P {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .section-skill h3 {
+    font-size: 54px;
+  }
+
+  .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(2) {
+    transform: rotateY(32.73deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(3) {
+    transform: rotateY(65.46deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(4) {
+    transform: rotateY(98.19deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(5) {
+    transform: rotateY(130.92deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(6) {
+    transform: rotateY(163.65deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(7) {
+    transform: rotateY(196.38deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(8) {
+    transform: rotateY(229.11deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(9) {
+    transform: rotateY(261.84deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(10) {
+    transform: rotateY(294.57deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(11) {
+    transform: rotateY(327.3deg) translateZ(120px);
+  }
+  .content-carrousel figure:nth-child(12) {
+    transform: rotateY(360deg) translateZ(120px);
+  }
+}

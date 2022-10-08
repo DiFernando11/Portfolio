@@ -1,0 +1,212 @@
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 990;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(10, 9, 9);
+  z-index: 990;
+}
+
+nav li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+/* nav li:hover {
+  background-color: blueviolet;
+  transition: 0.8s;
+} */
+.navToggle {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  display: none;
+}
+
+.logoStaff {
+  font-size: 5vw;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 100px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.navMenu {
+  display: flex;
+  margin: 24px 24px 24px 8px;
+  text-transform: uppercase;
+  width: max-content;
+  left: 100%;
+  transition: left 0.3s;
+}
+.nav_menu_visible {
+  display: flex;
+  text-transform: uppercase;
+  line-height: 70px;
+  background-color: rgb(10, 9, 9);
+}
+
+.buttonListMenu {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: auto 8px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.logoSocialNetworks {
+  border: 1px solid hsla(0, 7%, 94%, 0.788);
+  /* background-color: none; */
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.logoSocialNetworks:hover {
+  background-color: hsla(0, 7%, 94%, 0.788);
+}
+.socialArrow {
+  color: black;
+}
+.navContact {
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.navMenu a,
+.nav_menu_visible a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.navMenu a span,
+.nav_menu_visible a span {
+  transition: transform 0.2s ease-out;
+}
+.navMenu a span:first-child,
+.nav_menu_visible a span:first-child {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Slabo 27px", serif;
+}
+.navMenu a span:last-child,
+.nav_menu_visible a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+.navMenu a:hover span:first-child,
+.nav_menu_visible a:hover span:first-child {
+  transform: translateY(100%);
+}
+.navMenu a:hover span:last-child,
+.navMenu[data-animation] a:hover span:last-child,
+.nav_menu_visible a:hover span:last-child,
+.nav_menu_visible[data-animation] a:hover span:last-child {
+  transform: none;
+}
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navMenu[data-animation="to-top"] a span:last-child,
+.nav_menu_visible[data-animation="to-top"] {
+  transform: translateY(100%);
+}
+
+.navMenu[data-animation="to-top"] a:hover span:first-child,
+.nav_menu_visible[data-animation="to-top"] a:hover span:first-child {
+  transform: translateY(-100%);
+}
+
+.navMenu[data-animation="to-right"] a span:last-child,
+.nav_menu_visible[data-animation="to-right"] a span:last-child {
+  transform: translateX(-100%);
+}
+
+.navMenu[data-animation="to-right"] a:hover span:first-child,
+.nav_menu_visible[data-animation="to-right"] a:hover span:first-child {
+  transform: translateX(100%);
+}
+
+.navMenu[data-animation="to-left"] a span:last-child,
+.nav_menu_visible[data-animation="to-left"] a span:last-child {
+  transform: translateX(100%);
+}
+
+.navMenu[data-animation="to-left"] a:hover span:first-child,
+.nav_menu_visible[data-animation="to-left"] a:hover span:first-child {
+  transform: translateX(-100%);
+}
+
+@media (max-width: 1098px) {
+  /* header {
+    height: 100px;
+  } */
+  .nav_menu_visible {
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 92px;
+    line-height: 16px;
+
+    z-index: 1;
+  }
+  .navMenu {
+    position: fixed;
+    z-index: 2;
+  }
+  .buttonListMenu {
+    display: block;
+    margin-right: 16px;
+    font-size: 36px;
+    background-color: none;
+    transition: left 0.3s;
+  }
+  .logoStaff {
+    font-size: 8vw;
+  }
+  nav li {
+    font-size: 12px;
+  }
+  .logoSocialNetworks,
+  .navContact {
+    border: none;
+    border-radius: 0;
+  }
+  .logoSocialNetworks:hover {
+    background-color: transparent;
+  }
+  .socialArrow {
+    color: white;
+  }
+}
+@media (max-width: 740px) {
+  nav {
+    height: 88px;
+  }
+  .logoStaff {
+    margin: 0;
+  }
+  .nav_menu_visible {
+    top: 88px;
+  }
+}

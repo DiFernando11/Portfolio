@@ -1,0 +1,126 @@
+.about-section {
+  border-radius: 5px;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  margin: 80px 0 0px 60px;
+  max-width: 780px;
+  padding: 40px 36px;
+  border-radius: 8px;
+  height: auto;
+  background: rgba(42, 41, 41, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px 0px black;
+}
+
+.about-section .welcome-portfolio {
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  font-size: 1.5vw;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+}
+.welcome-destokp {
+  margin-bottom: 50px;
+}
+
+.about-section p {
+  margin-top: 48px;
+  line-height: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container-about-section {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar-main {
+  width: 550px;
+  display: flex;
+  margin: auto;
+}
+.avatar-main .avatar-desktop {
+  width: 75%;
+  height: 480px;
+  margin: 48px auto 0px auto;
+  border-radius: 8%;
+}
+.avatar-mobile {
+  display: none;
+}
+
+/* title presentatio */
+div.middle {
+  margin: 24px auto;
+  /* padding: 24px 0; */
+  height: 120px;
+  width: 100%;
+  line-height: 150px;
+  color: white;
+  text-shadow: -1px 0 rgb(228, 9, 239), 1px 0 rgb(12, 12, 12),
+    0 1px rgb(175, 3, 238), 0 -1px rgb(13, 14, 13);
+}
+.text-type-animation {
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: white;
+}
+.txt-rotate {
+  color: grey;
+}
+
+@media (max-width: 1098px) {
+  .about-section {
+    margin: 32px 0;
+    max-width: 1030px;
+    padding: 40px 36px;
+  }
+
+  .about-section .welcome-portfolio {
+    font-size: 24px;
+  }
+  .avatar-main,
+  .avatar-main img {
+    display: none;
+  }
+  .container-title-picture {
+    justify-content: space-between;
+    display: flex;
+  }
+  .avatar-mobile {
+    display: block;
+    width: 40vw;
+    height: 340px;
+    border-radius: 8%;
+  }
+  div.middle {
+    margin: auto;
+  }
+  .about-section p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .avatar-mobile {
+    width: 30vw;
+    height: 165px;
+    margin: 32px 0px 0px 0;
+    z-index: 999;
+  }
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section .welcome-portfolio {
+    font-size: 16px;
+  }
+}
