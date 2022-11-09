@@ -1,4 +1,4 @@
-.about_projects{
+.about_projects {
   background: rgba(42, 41, 41, 0.3);
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -14,6 +14,8 @@
   max-width: 600px;
   border: 1px solid white;
   border-radius: 16px;
+  justify-self: center;
+  justify-content: center;
 }
 
 .container_render_projects_header div:nth-child(1) {
@@ -46,4 +48,10 @@
     padding: 4px;
   }
 
+  .about_projects {
+    padding: 0 0 18px 0;
+  }
+  .container_render_projects_header {
+    width: 98%;
+  }
 }

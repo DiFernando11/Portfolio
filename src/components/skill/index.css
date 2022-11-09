@@ -124,6 +124,7 @@
   .section-skill {
     max-height: 350px;
     margin: 34px auto;
+    border-radius: 12px;
   }
   .section-skill P {
     font-size: 8px;

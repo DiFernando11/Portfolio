@@ -22,11 +22,10 @@ body {
   background-size: cover;
   height: 100vh;
   color: rgb(255, 254, 254);
-  
 }
 
-i{
-  color:white;
+i {
+  color: white;
 }
 html {
   font-size: 62.5%; /* =10px */
