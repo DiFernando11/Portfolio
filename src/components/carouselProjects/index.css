@@ -170,6 +170,10 @@ IMAGE PREVIEW
 
 }
 @media (max-width: 740px) {
+  .section_projects{
+    width: 100%;
+  }
+
   .section_projects .carrusel_button {
     min-width: 10px;
     min-height: 10px;
@@ -198,6 +202,8 @@ IMAGE PREVIEW
   }
   .container_tecnologies {
     margin-top: 16px;
-
+  }
+  .container_section_projectsr_img_video_projects {
+    width: 100%;
   }
 }
