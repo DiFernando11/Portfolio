@@ -101,9 +101,7 @@ div.middle {
     height: 340px;
     border-radius: 8%;
   }
-  div.middle {
-    margin: auto;
-  }
+
   .about-section p {
     margin-top: 0;
   }

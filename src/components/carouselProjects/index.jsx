@@ -84,7 +84,7 @@ function CarouselProjects({ renderProyects }) {
   return (
     <section className="section_projects">
       <div className="flex_container_section_projects">
-        <div className="wrap">
+        <div className="wrapSectionProjects">
           <button className="carrusel_button" onClick={prevCardFavority}>
             <i className="bi bi-chevron-left"></i>
           </button>
@@ -162,7 +162,7 @@ function CarouselProjects({ renderProyects }) {
               </div>
             ))}
         </div>
-        <div className="wrap">
+        <div className="wrapSectionProjects">
           <button className="carrusel_button" onClick={nextCardFavority}>
             <i className="bi bi-chevron-right"></i>
           </button>
