@@ -139,7 +139,7 @@ function Contact() {
             <img
               className="logoWathsapp"
               src={svgEmail}
-              alt="logo wathsapp"
+              alt="logo email"
             />
 
             <textarea
