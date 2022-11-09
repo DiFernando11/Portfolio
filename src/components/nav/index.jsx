@@ -44,7 +44,7 @@ function Nav() {
             </a>
           </li>
           <li className="logoSocialNetworks">
-            <a href="https://github.com/DiFernando11?tab=repositories" target="_blank">
+            <a href="https://github.com/DiFernando11" target="_blank">
               <span>
                 <i className="bi bi-github"></i>
               </span>

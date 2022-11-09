@@ -125,14 +125,14 @@ function CarouselProjects({ renderProyects }) {
                               </li>
                               <div className="flex_icon_mobile">
                                 <li>
-                                  <a href={project.aplication}>
+                                  <a href={project.aplication} target="_blank">
                                     <div className="icon_preview">
                                       <i className="bi bi-eye"></i>
                                     </div>
                                   </a>
                                 </li>
                                 <li>
-                                  <a href={project.gitHub}>
+                                  <a href={project.gitHub} target="_blank">
                                     <div className="icon_preview">
                                       <i className="bi bi-github"></i>
                                     </div>

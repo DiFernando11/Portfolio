@@ -1,9 +1,10 @@
-import projectCountries from "./assets/countries (1).png";
+import projectGameLoop from "./assets/GameLoop.png";
+import projectCountries from "./assets/countriesApi.png";
 import projectPokedex from "./assets/pokedex.png";
-import projectTodos from "./assets/todos.ajuste.png";
+import projectTodos from "./assets/todolist.png";
 import projectDog from "./assets/dogsapp.png";
 import projectWather from "./assets/weather.png";
-import projectMovies from "./assets/moviesApirest.png";
+import projectMovies from "./assets/DiferMoviesApp.png";
 import videoProjectCountries from "./assets/AppCountries.mp4";
 import videoProjectPokedex from "./assets/AppPokedex.mp4";
 import videoProjectTodos from "./assets/AppTodo.mp4";
@@ -21,20 +22,45 @@ import logoExpress from "./assets/express.png";
 
 export function validate(input) {
   let errors = {};
-  if (input.firstName.length < 3) {
-    errors.firstName = "It is very short.";
+  if (input.asunto.length < 3) {
+    errors.asunto = "It is very short.";
   }
 
-  if (input.lastName.length < 3) {
-    errors.lastName = "It is very short.";
+  if (input.name.length < 3) {
+    errors.name = "It is very short.";
   }
 
   if (input.message.length < 4) {
     errors.message = "It is very short.";
   }
+  if (!input.email || typeof input.email !== "string") {
+    errors.email = "Please type a email!";
+  }
+  if (
+    /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(input.email) === false
+  ) {
+    errors.email = "Please type a valid email!";
+  }
   return errors;
 }
 export const projectsPersonal = [
+  {
+    name: "GAMELOOP APP",
+    project: projectGameLoop,
+    video: "https://www.ahiva.info/Gifs-Animados/Simbolos-y-signos/Construccion-Sites-Obras/Construccion-Sites-Obras-159.gif",
+    gitHub: "https://github.com/DiFernando11/gamer-commerce",
+    aplication: "https://gamer-commerce.vercel.app",
+    technologies: [
+      logoHtml,
+      logoCss,
+      logoJavaScript,
+      logoReact,
+      logoRedux,
+      logoNode,
+      logoExpress,
+      logoPostgrest,
+    ],
+  },
   {
     name: "COUNTRIES APP",
     project: projectCountries,
