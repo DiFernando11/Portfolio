@@ -43,6 +43,7 @@
   width: 550px;
   display: flex;
   margin: auto;
+  filter: saturate(180%);
 }
 .avatar-main .avatar-desktop {
   width: 75%;
@@ -52,6 +53,7 @@
 }
 .avatar-mobile {
   display: none;
+  filter: saturate(180%);
 }
 
 /* title presentatio */

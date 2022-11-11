@@ -18,18 +18,6 @@ function Contact() {
     setInputMessage({ ...inputMesagge, [e.target.name]: e.target.value });
     setErrors(validate({ ...inputMesagge, [e.target.name]: e.target.value }));
   };
-  const handleSenMessage = (e) => {
-    e.preventDefault();
-    // window.open(
-    //   `https://api.whatsapp.com/send?phone=+5930962748639&text=${messageUserValue}`
-    // );
-    setInputMessage({
-      firstName: "",
-      lastName: "",
-      message: "",
-    });
-  };
-  console.log(inputMesagge, "input");
 
   return (
     <div className="space_section_contact">

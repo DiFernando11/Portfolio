@@ -59,6 +59,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto 6px auto;
+  filter: saturate(240%);
 }
 .content-carrousel img:hover {
   transform: scale(1.2);

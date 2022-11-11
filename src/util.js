@@ -1,12 +1,13 @@
-import projectGameLoop from "./assets/GameLoop.png";
-import projectCountries from "./assets/countriesApi.png";
-import projectPokedex from "./assets/pokedex.png";
+import projectGameLoop from "./assets/gameLoopPortada.png";
+import projectCountries from "./assets/countriesPiPortada.png";
+import projectPokedex from "./assets/pokemonPortada (1).png";
 import projectTodos from "./assets/todolist.png";
-import projectDog from "./assets/dogsapp.png";
+import projectDog from "./assets/dogsPortada (1).png";
 import projectWather from "./assets/weather.png";
-import projectMovies from "./assets/DiferMoviesApp.png";
+import projectMovies from "./assets/appMoviesPortada.png";
+import videoProjectGameLoop from "./assets/GameLoopPort.mp4";
 import videoProjectCountries from "./assets/AppCountries.mp4";
-import videoProjectPokedex from "./assets/AppPokedex.mp4";
+import videoProjectPokedex from "./assets/PokemonAplication.mp4";
 import videoProjectTodos from "./assets/AppTodo.mp4";
 import videoProjectWeather from "./assets/AppWeather.mp4";
 import videoProjectMovies from "./assets/AppMovies.mp4";
@@ -47,7 +48,7 @@ export const projectsPersonal = [
   {
     name: "GAMELOOP APP",
     project: projectGameLoop,
-    video: "https://www.ahiva.info/Gifs-Animados/Simbolos-y-signos/Construccion-Sites-Obras/Construccion-Sites-Obras-159.gif",
+    video: videoProjectGameLoop,
     gitHub: "https://github.com/DiFernando11/gamer-commerce",
     aplication: "https://gamer-commerce.vercel.app",
     technologies: [
