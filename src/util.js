@@ -5,7 +5,7 @@ import projectTodos from "./assets/todolist.png";
 import projectDog from "./assets/dogsPortada (1).png";
 import projectWather from "./assets/weather.png";
 import projectMovies from "./assets/appMoviesPortada.png";
-import videoProjectGameLoop from "./assets/GameLoopPort.mp4";
+import videoProjectGameLoop from "./assets/presentation-gameloop.mp4";
 import videoProjectCountries from "./assets/AppCountries.mp4";
 import videoProjectPokedex from "./assets/PokemonAplication.mp4";
 import videoProjectTodos from "./assets/AppTodo.mp4";
