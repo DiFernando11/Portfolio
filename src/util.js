@@ -5,6 +5,7 @@ import projectTodos from "./assets/todolist.png";
 import projectDog from "./assets/dogsPortada (1).png";
 import projectWather from "./assets/weather.png";
 import projectMovies from "./assets/appMoviesPortada.png";
+import projectHenryGram from "./assets/HenryGram.png";
 import videoProjectGameLoop from "./assets/presentation-gameloop.mp4";
 import videoProjectCountries from "./assets/AppCountries.mp4";
 import videoProjectPokedex from "./assets/PokemonAplication.mp4";
@@ -12,6 +13,7 @@ import videoProjectTodos from "./assets/AppTodo.mp4";
 import videoProjectWeather from "./assets/AppWeather.mp4";
 import videoProjectMovies from "./assets/AppMovies.mp4";
 import videoProjectDogs from "./assets/DogsApp.mp4";
+import videoProjectHenryGram from "./assets/HenryGram.mp4";
 import logoJavaScript from "./assets/javascript.png";
 import logoHtml from "./assets/html.png";
 import logoCss from "./assets/css.png";
@@ -20,6 +22,8 @@ import logoRedux from "./assets/redux.png";
 import logoNode from "./assets/nodejs.png";
 import logoPostgrest from "./assets/postgressql.png";
 import logoExpress from "./assets/express.png";
+import logoMongo from "./assets/MongoDB_Logo.svg.png";
+import logoSocket from "./assets/1024px-Socket-io.svg.png";
 
 export function validate(input) {
   let errors = {};
@@ -45,6 +49,23 @@ export function validate(input) {
   return errors;
 }
 export const projectsPersonal = [
+  {
+    name: "HENRYGRAM",
+    project: projectHenryGram,
+    video: videoProjectHenryGram,
+    gitHub: "https://github.com/DiFernando11/HenryGram",
+    aplication: "https://henry-gram-client.vercel.app/#/home",
+    technologies: [
+      logoHtml,
+      logoCss,
+      logoJavaScript,
+      logoReact,
+      logoRedux,
+      logoNode,
+      logoMongo,
+      logoSocket,
+    ],
+  },
   {
     name: "GAMELOOP APP",
     project: projectGameLoop,
