@@ -13,7 +13,7 @@ import videoProjectTodos from "./assets/AppTodo.mp4";
 import videoProjectWeather from "./assets/AppWeather.mp4";
 import videoProjectMovies from "./assets/AppMovies.mp4";
 import videoProjectDogs from "./assets/DogsApp.mp4";
-import videoProjectHenryGram from "./assets/HenryGram.mp4";
+import videoProjectHenryGram from "./assets/Henrry-Gram - Compressed with FlexClip.mp4";
 import logoJavaScript from "./assets/javascript.png";
 import logoHtml from "./assets/html.png";
 import logoCss from "./assets/css.png";
