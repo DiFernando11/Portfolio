@@ -1,85 +1,24 @@
-import React, { useState } from "react";
-import { projectsPersonal } from "../../util.js";
-import "./index.css";
+import React, { useContext, useState } from 'react';
+import { projectsPersonal } from '../../util.js';
+import './index.css';
+import { Datacontext, actions } from '../../context/context.jsx';
 
 function CarouselProjects({ renderProyects }) {
-  const [cardFavoriteCurrent, setCardFavoriteCurrent] = useState(0);
+  const { state, dispatch } = useContext(Datacontext);
+  const { currentStep } = state;
 
-  // const projectsPersonal = [
-  //   {
-  //     name: "COUNTRIES APP",
-  //     project: projectCountries,
-  //     video: videoProjectCountries,
-  //     gitHub: "https://github.com/DiFernando11/PI-Countries",
-  //     aplication: "https://countries-app-api.vercel.app",
-  //     technologies: [
-  //       logoHtml,
-  //       logoCss,
-  //       logoJavaScript,
-  //       logoReact,
-  //       logoRedux,
-  //       logoNode,
-  //       logoExpress,
-  //       logoPostgrest,
-  //     ],
-  //   },
-  //   {
-  //     name: "MOVIES APP",
-  //     project: projectMovies,
-  //     video: videoProjectMovies,
-  //     gitHub: "https://github.com/DiFernando11/AppMoviesApiRest",
-  //     aplication: "https://difernando11.github.io/AppMoviesApiRest/",
-  //     technologies: [logoHtml, logoCss, logoJavaScript],
-  //   },
-  //   {
-  //     name: "WEATHER APP",
-  //     project: projectWather,
-  //     video: videoProjectWeather,
-  //     gitHub: "https://github.com/DiFernando11/Weather-App",
-  //     aplication:
-  //       "https://62f2f16dc8eb5839d7f16bcd--cerulean-biscuit-c2f248.netlify.app/",
-  //     technologies: [logoHtml, logoCss, logoJavaScript, logoReact],
-  //   },
-  //   {
-  //     name: "TODO LIST APP",
-  //     project: projectTodos,
-  //     video: videoProjectTodos,
-  //     gitHub: "https://github.com/DiFernando11/cursobasicojsreact",
-  //     aplication: "https://difernando11.github.io/cursobasicojsreact/",
-  //     technologies: [logoHtml, logoCss, logoJavaScript, logoReact],
-  //   },
-  //   {
-  //     name: "POKEDEX",
-  //     project: projectPokedex,
-  //     video: videoProjectPokedex,
-  //     gitHub: "https://github.com/DiFernando11/pokedex",
-  //     aplication: "https://difernando11.github.io/pokedex/",
-  //     technologies: [logoHtml, logoCss, logoJavaScript, logoReact],
-  //   },
-  //   {
-  //     name: "DOGS APP",
-  //     project: projectDog,
-  //     video: videoProjectDogs,
-  //     gitHub: "https://github.com/DiFernando11/ConsumoApiDogApi",
-  //     aplication: "https://difernando11.github.io/ConsumoApiDogApi/",
-  //     technologies: [logoHtml, logoCss, logoJavaScript, logoReact],
-  //   },
-  // ];
   const lengthCardsFavorities = projectsPersonal.length;
-
   const nextCardFavority = () => {
-    setCardFavoriteCurrent(
-      cardFavoriteCurrent === lengthCardsFavorities - 1
-        ? 0
-        : cardFavoriteCurrent + 1
-    );
+    dispatch({
+      type: actions.SET_CURRENT_STEP,
+      payload: currentStep === lengthCardsFavorities - 1 ? 0 : currentStep + 1,
+    });
   };
   const prevCardFavority = () => {
-    setCardFavoriteCurrent(
-      cardFavoriteCurrent === 0
-        ? lengthCardsFavorities - 1
-        : cardFavoriteCurrent - 1
-    );
+    dispatch({
+      type: actions.SET_CURRENT_STEP,
+      payload: currentStep === 0 ? lengthCardsFavorities - 1 : currentStep - 1,
+    });
   };
   return (
     <section className="section_projects">
@@ -93,7 +32,7 @@ function CarouselProjects({ renderProyects }) {
           {projectsPersonal.length &&
             projectsPersonal.map((project, index) => (
               <div key={index}>
-                {cardFavoriteCurrent === index && (
+                {currentStep === index && (
                   <div key={index} className="container_img_video_projects">
                     {!renderProyects ? (
                       <div className="container_image_preview">
@@ -135,13 +74,15 @@ function CarouselProjects({ renderProyects }) {
                                       </div>
                                     </a>
                                   </li>
-                                  <li>
-                                    <a href={project.gitHub} target="_blank">
-                                      <div className="icon_preview">
-                                        <i className="bi bi-github"></i>
-                                      </div>
-                                    </a>
-                                  </li>
+                                  {project.gitHub && (
+                                    <li>
+                                      <a href={project.gitHub} target="_blank">
+                                        <div className="icon_preview">
+                                          <i className="bi bi-github"></i>
+                                        </div>
+                                      </a>
+                                    </li>
+                                  )}
                                 </div>
                               </div>
                             </ul>
@@ -149,13 +90,17 @@ function CarouselProjects({ renderProyects }) {
                         </div>
                       </div>
                     ) : (
-                      <video
-                        className="video_image_projects_mobile"
-                        autoPlay
-                        controls
-                      >
-                        <source src={project.video} type="video/mp4" />
-                      </video>
+                      <>
+                        {project.video && (
+                          <video
+                            className="video_image_projects_mobile"
+                            autoPlay
+                            controls
+                          >
+                            <source src={project.video} type="video/mp4" />
+                          </video>
+                        )}
+                      </>
                     )}
                   </div>
                 )}
