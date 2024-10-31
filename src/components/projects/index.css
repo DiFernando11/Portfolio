@@ -11,7 +11,7 @@
 .container_render_projects_header {
   display: flex;
   margin: 32px auto;
-  max-width: 600px;
+  max-width: 800px;
   justify-self: center;
   justify-content: center;
 }
@@ -19,15 +19,11 @@
 .container_render_projects_header div:nth-child(1) {
   border-bottom-left-radius: 16px;
   border-top-left-radius: 16px;
-  border-right: 1px solid white;
-  border: 1px solid white;
-}
-.container_render_projects_header div:nth-child(2) {
   border-bottom-right-radius: 16px;
   border-top-right-radius: 16px;
-  border-left: 1px solid white;
   border: 1px solid white;
 }
+
 .container_render_projects_header div {
   width: 50%;
   padding: 8px;

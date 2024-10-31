@@ -1,41 +1,38 @@
-import React, { useContext, useState } from 'react';
-import CarouselProjects from '../carouselProjects';
-
-import './index.css';
-import { projectsPersonal } from '../../util';
-import { Datacontext } from '../../context/context';
+import React, { useContext, useState } from "react";
+import "./index.css";
+import { Datacontext } from "../../context/context";
+import ProjectPersonal from "./projectPersonal";
+import ContributionProjects from "./contributionProjects";
+import SchoolProjects from "./studentsProyects";
 
 function Projects() {
-  const { state, dispatch } = useContext(Datacontext);
+  const { state } = useContext(Datacontext);
   const { currentStep } = state;
   const [renderProyects, setRenderProjects] = useState(false);
   const handleRenderProyectsVideoOrImage = () => {
     setRenderProjects(!renderProyects);
   };
-  const isThereVideo = projectsPersonal[currentStep].video;
+
   return (
-    <section id="projects" className="about_projects linkNavigation">
+    <section
+      id="projects"
+      className="about_projects px-16 linkNavigation w-full sm:w-[90%] max-w-[1500px]"
+    >
       <div className="container_render_projects_header">
         <div
           onClick={handleRenderProyectsVideoOrImage}
           className={`${
-            renderProyects ? 'activatedIsRender' : 'desactivatedIsRender'
+            renderProyects ? "activatedIsRender" : "desactivatedIsRender"
           }`}
         >
           Projects
         </div>
-        {isThereVideo ? (
-          <div
-            onClick={handleRenderProyectsVideoOrImage}
-            className={`${
-              !renderProyects ? 'activatedIsRender' : 'desactivatedIsRender'
-            }`}
-          >
-            Video
-          </div>
-        ) : null}
       </div>
-      <CarouselProjects renderProyects={renderProyects} />
+      <div className="flex flex-col gap-10">
+        <ProjectPersonal />
+        <ContributionProjects />
+        <SchoolProjects />
+      </div>
     </section>
   );
 }
