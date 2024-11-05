@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./index.css";
-import svgFormImage from "../../assets/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg";
-import svgEmail from "../../assets/gmail.png";
 import { validate } from "../../util";
 
 function Contact() {
@@ -23,7 +21,7 @@ function Contact() {
     <div className="space_section_contact">
       <section id="contact" className="section_contact linkNavigation">
         <div className="container_form container_form_image">
-          <img className="logoForm" src={svgFormImage} alt="logo contact" />
+          <img className="logoForm" src={"/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg"} alt="logo contact" />
         </div>
 
         <div className="container_form">
@@ -126,7 +124,7 @@ function Contact() {
             </div>
             <img
               className="logoWathsapp"
-              src={svgEmail}
+              src={"/gmail.png"}
               alt="logo email"
             />
 

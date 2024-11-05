@@ -75,7 +75,7 @@ function ContainerProyect({
                 <p className="font-general">{visit.name}</p>
                 <img
                   className="w-8 h-8"
-                  src="/src/assets/web.svg"
+                  src="/web.svg"
                   alt="visit to web"
                 />
               </a>
@@ -86,21 +86,21 @@ function ContainerProyect({
               {github && (
                 <a href={github} target="_blank" rel="noopener noreferrer">
                   <span className="w-20 h-20 rounded-full flex justify-center items-center">
-                    <img src="/src/assets/github.png" className="w-16 h-16" />
+                    <img src="/github.png" className="w-16 h-16" />
                   </span>
                 </a>
               )}
               {web && (
                 <a href={web} target="_blank" rel="noopener noreferrer">
                   <span className="w-20 h-20 rounded-full flex justify-center items-center">
-                    <img src="/src/assets/web.svg" className="w-16 h-16" />
+                    <img src="/web.svg" className="w-16 h-16" />
                   </span>
                 </a>
               )}
               {mobile && (
                 <a href={mobile} target="_blank" rel="noopener noreferrer">
                   <span className="w-16 h-16 rounded-full flex justify-center items-center bg-white">
-                    <img src={"/src/assets/mobile.svg"} className="w-16 h-16" />
+                    <img src={"/mobile.svg"} className="w-16 h-16" />
                   </span>
                 </a>
               )}

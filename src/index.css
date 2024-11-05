@@ -20,7 +20,7 @@ body {
   background-attachment: fixed;
   font-size: 1.6rem; /* =16px */
   /* image de fondo */
-  background-image: url("./assets/portada3.jpeg");
+  background-image: url("/portada3.jpeg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,7 +46,7 @@ a {
 
 @font-face {
   font-family: "Medina";
-  src: url("/src/assets/Caneletter.otf") format("truetype");
+  src: url("/Caneletter.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,49 +1,39 @@
-import logoJavaScript from "../assets/javascript.png";
-import logoReact from "../assets/reactjs.png";
-import logoRedux from "../assets/redux.png";
-import logoPostgrest from "../assets/postgressql.png";
-import logoNext from "../assets/next-js.svg"
-import logoNest from "../assets/nestjs.svg"
-import logoTypeScript from "../assets/typeScript.png";
-import logoGithub from "../assets/github.png"
-
-
 export const skills = [
     {
     name: "Javascript",
-    logo:  logoJavaScript,
+    logo:  "/javascript.png",
 },
     {
     name: "React",
-    logo:  logoReact,
+    logo:  "/reactjs.png",
 },
     {
     name: "Redux",
-    logo:  logoRedux,
+    logo:  "/redux.png",
 },
     {
     name: "TypeScript",
-    logo:  logoTypeScript,
+    logo:  "/typeScript.png",
 },
     {
     name: "Postgrest",
-    logo:  logoPostgrest,
+    logo:  "/postgressql.png",
 },
     {
     name: "React Native",
-    logo:  logoReact,
+    logo:  "/reactjs.png",
 },
     {
     name: "NextJS",
-    logo:  logoNext,
+    logo:  "/next-js.svg",
 },
     {
     name: "NestJS",
-    logo:  logoNest,
+    logo:  "/nestjs.svg",
 },
     {
     name: "Github",
-    logo:  logoGithub,
+    logo:  "/github.png",
 },
 
 ]

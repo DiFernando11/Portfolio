@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-import avatar from "../../assets/aboutImagePortfolio-removebg-preview.png";
 
 function About() {
   var TxtRotate = function (el, toRotate, period) {
@@ -79,7 +78,7 @@ function About() {
                 ></span>
               </span>
             </div>
-            <img className="avatar-mobile" src={avatar} alt="avatar" />
+            <img className="avatar-mobile" src={'/aboutImagePortfolio-removebg-preview.png'} alt="avatar" />
           </div>
 
           <p>
@@ -91,7 +90,7 @@ function About() {
           </p>
         </div>
         <figure className="avatar-main">
-          <img className="avatar-desktop" src={avatar} alt="avatar" />
+          <img className="avatar-desktop" src={'/aboutImagePortfolio-removebg-preview.png'} alt="avatar" />
         </figure>
       </div>
     </section>
